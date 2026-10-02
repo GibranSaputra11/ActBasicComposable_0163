@@ -21,8 +21,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             P3LayoutTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Kolom(
-                        modif = Modifier.padding(innerPadding)
+                    TataletakBoxColumnRow(
+                        modifier = Modifier.padding(paddingValues = innerPadding)
                     )
                 }
             }
