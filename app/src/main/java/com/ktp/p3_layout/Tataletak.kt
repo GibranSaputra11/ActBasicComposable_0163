@@ -7,3 +7,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import java.lang.reflect.Modifier
 
+@Composable
+fun TataletakColumn(){
+
+}
