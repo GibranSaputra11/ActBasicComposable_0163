@@ -51,6 +51,13 @@ fun TataletakBox(modifier: Modifier){
 
 @Composable
 fun TataletakColumnRow(){
-    Column() { }
-    Row() { }
+    Column() {
+        Row() {
+            Text(text = "Komponen 1 Baris 1")
+            Text(text = "Komponen 2 Baris 1")
+            Text(text = "Komponen 3 Baris 1")
+        }
+        Row() { }
+    }
+
 }
