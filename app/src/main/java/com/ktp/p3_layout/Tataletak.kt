@@ -1,6 +1,7 @@
 package com.ktp.p3_layout
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -33,7 +34,13 @@ fun TataletakRow(modifier: Modifier){
 
 @Composable
 fun TataletakBox(){
-    Box(){
+    Box(
 
+    ){
+        Text(text = "Box 1")
+        Text(text = "Colum 1")
+        Text(text = "Row 1")
+        Text(text = "Box 2")
+        Text(text = "Colum 2")
     }
 }
