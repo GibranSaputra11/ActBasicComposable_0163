@@ -65,5 +65,12 @@ fun TataletakColumnRow(modifier: Modifier){
             Text(text = "Komponen 3 Baris 2")
         }
     }
+}
 
+@Composable
+fun TataletakRowColumn(){
+    Row() {
+        Column() { }
+        Column() { }
+    }
 }
