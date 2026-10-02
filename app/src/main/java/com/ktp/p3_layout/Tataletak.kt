@@ -9,5 +9,10 @@ import java.lang.reflect.Modifier
 
 @Composable
 fun TataletakColumn(){
-
+    Column() {
+        Text(text = "Komponen1")
+        Text(text = "Komponen2")
+        Text(text = "Komponen3")
+        Text(text = "Komponen4")
+    }
 }
