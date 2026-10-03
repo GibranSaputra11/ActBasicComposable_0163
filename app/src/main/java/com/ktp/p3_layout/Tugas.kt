@@ -70,7 +70,36 @@ fun login(modifier: Modifier){
                 )
             }
             Spacer(modifier = Modifier.padding(25.dp))
-
+            Row(modifier = Modifier
+                .fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Text(text = "Nama",
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White
+                )
+            }
+            Row(modifier = Modifier
+                .fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Text(text = "Gibran Saputra",
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Yellow
+                )
+            }
+            Row(modifier = Modifier
+                .fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Text(text = "20240140163",
+                    fontSize = 40.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Black
+                )
+            }
         }
     }
 }
