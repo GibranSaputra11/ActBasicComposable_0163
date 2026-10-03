@@ -10,6 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.blur
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.ktp.p3_layout.ui.theme.P3LayoutTheme
@@ -21,9 +22,15 @@ class MainActivity : ComponentActivity() {
         setContent {
             P3LayoutTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    TataletakBoxColumnRow(
+//                    TataletakBoxColumnRow(
+//                        modifier = Modifier.padding(paddingValues = innerPadding)
+//                    )
+                    login(
                         modifier = Modifier.padding(paddingValues = innerPadding)
                     )
+//                    TataletakColumnRow(
+//                        modifier = Modifier.padding(paddingValues = innerPadding)
+//                    )
                 }
             }
         }
