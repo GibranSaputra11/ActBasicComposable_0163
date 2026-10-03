@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import org.w3c.dom.Text
@@ -28,7 +29,7 @@ fun login(modifier: Modifier){
     val logo = painterResource(id = R.drawable.umylogo)
     val foto = painterResource(id = R.drawable.petani)
     Box(
-        modifier = modifier.fillMaxSize()
+        modifier = Modifier.fillMaxSize()
     ){
         Image(modifier = Modifier.fillMaxSize(),
             painter = bg,
@@ -36,22 +37,23 @@ fun login(modifier: Modifier){
             contentScale = ContentScale.Crop
         )
         Column(modifier = Modifier.fillMaxSize()) {
+            Spacer(modifier = Modifier.padding(30.dp))
             Row(modifier = Modifier
                     .fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
                 Text(text = "Login",
-                    fontSize = 50.sp,
-                    color = Color.Red,
+                    fontSize = 40.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Red
                 )
             }
-            Spacer(modifier = Modifier.height(16.dp))
             Row(modifier = Modifier
                     .fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
                 Text(text = "Ini adalah halam login.",
-                    fontSize = 25.sp,
+                    fontSize = 20.sp,
                     color = Color.Black,
                 )
             }
