@@ -58,7 +58,7 @@ fun login(modifier: Modifier){
                     color = Color.Black,
                 )
             }
-            Spacer(modifier = Modifier.padding(50.dp))
+            Spacer(modifier = Modifier.padding(25.dp))
             Row(modifier = Modifier
                 .fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
@@ -69,6 +69,8 @@ fun login(modifier: Modifier){
                     contentScale = ContentScale.Crop
                 )
             }
+            Spacer(modifier = Modifier.padding(25.dp))
+
         }
     }
 }
