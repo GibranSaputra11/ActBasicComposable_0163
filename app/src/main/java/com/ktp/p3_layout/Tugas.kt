@@ -28,7 +28,7 @@ fun login(modifier: Modifier){
     val logo = painterResource(id = R.drawable.umylogo)
     val foto = painterResource(id = R.drawable.petani)
     Box(
-        modifier = Modifier.fillMaxSize()
+        modifier = modifier.fillMaxSize()
     ){
         Image(modifier = Modifier.fillMaxSize(),
             painter = bg,
@@ -36,7 +36,7 @@ fun login(modifier: Modifier){
             contentScale = ContentScale.Crop
         )
         Column(modifier = Modifier.fillMaxSize()) {
-            Row(modifier = modifier
+            Row(modifier = Modifier
                     .fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
@@ -46,7 +46,7 @@ fun login(modifier: Modifier){
                 )
             }
             Spacer(modifier = Modifier.height(16.dp))
-            Row(modifier = modifier
+            Row(modifier = Modifier
                     .fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
