@@ -66,7 +66,7 @@ fun login(modifier: Modifier){
                 .fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
-                Image(modifier = Modifier.size(200.dp),
+                Image(modifier = Modifier.size(170.dp),
                     painter = logo,
                     contentDescription = null,
                     contentScale = ContentScale.Crop
@@ -103,6 +103,7 @@ fun login(modifier: Modifier){
                     color = Color.Black
                 )
             }
+            Spacer(modifier = Modifier.padding(10.dp))
             Row(modifier = Modifier
                 .fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
